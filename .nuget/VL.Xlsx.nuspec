@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.Xlsx</id>
+    <version>{{ VERSION }}</version>
+    <title>VL.Xlsx</title>
+    <authors>antokhio</authors>
+    <owners>antokhio</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/antokhio/VL.Xlsx</projectUrl>
+    <summary>Modern Excel Parser for [vvvv](https://vvvv.org)</summary>
+    <description>Set of nodes to parse xlsl files</description>
+    <copyright>Copyright © 2025 antokhio</copyright>
+    <tags>VL, vvvv, xlsx, xls, excel, sheets</tags>
+    <dependencies>
+      <dependency id="ExcelDataReader" version="3.7.0" />
+      <dependency id="ExcelDataReader.DataSet" version="3.7.0" />
+    </dependencies>
+  </metadata> 
+   <files>
+    <file src="..\*.vl" target=""/>
+    <file src="..\lib\x64\Release\net8.0\*.dll" target="lib\net8.0\" />
+    <file src="..\help\*.vl" target="help"/>
+    <file src="..\README.md" />
+    <file src="..\LICENSE" />
+  </files>
+</package>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="KpM8gqKvCaROk56kERqvaq" LanguageVersion="2025.7.0-0200-g4a7221ecd9" Version="0.128">
+  <NugetDependency Id="RJIpYXop5OvQQvDZarWTfT" Location="VL.CoreLib" Version="2025.7.0-0200-g4a7221ecd9" />
+  <Patch Id="AVcD4RC5lELPYdOXcagUgc">
+    <Canvas Id="EW4ult8bRGCQAl7rKMJIwR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="EEkh04zyP1cMkCFOHdnwgo">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="GmAOb68as6eLJMbvBrf3vx">
+        <Canvas Id="EWuERcK0UmAOx4xbfZovJr" CanvasType="Group">
+          <Node Bounds="341,231,71,19" Id="MFTATwIoQ5yQJE1sHyFwF1">
+            <p:NodeReference LastCategoryFullName="Xlsx" LastDependency="Xlsx.csproj">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Xlsx" />
+              <Choice Kind="ProcessAppFlag" Name="ExcelReader" />
+            </p:NodeReference>
+            <Pin Id="AVnL2BRyc7tNho0dSCFlv6" Name="Input" Kind="InputPin" />
+            <Pin Id="DTH1EolFlZEPcryW9MZOjz" Name="Output" Kind="OutputPin" />
+            <Pin Id="QPBdS28vMnYNMS1X25mrbS" Name="Read" Kind="InputPin" />
+          </Node>
+          <Pad Id="UWXFlCNYPe5McHFm5fJcun" Comment="" Bounds="343,190,126,15" ShowValueBox="true" isIOBox="true" Value="..\assets\Colors and Fruits.xlsx">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="341,301,45,19" Id="OYitsxsu2HQQLDwWT5CL8z">
+            <p:NodeReference LastCategoryFullName="Xlsx" LastDependency="Xlsx.csproj">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Table" />
+            </p:NodeReference>
+            <Pin Id="TBmqx9nWyZYOJGXEHCgx7w" Name="Input" Kind="InputPin" />
+            <Pin Id="IYoGts912W5N3h4BNWD7fy" Name="Table Index" Kind="InputPin" />
+            <Pin Id="JucjhcyWB8MPQXx1pX2qqF" Name="Read" Kind="ApplyPin" />
+            <Pin Id="J8B7kBrVtAnMD8SVYTx2JZ" Name="Output" Kind="OutputPin" />
+            <Pin Id="MPyxUHGU0dQQc2tzNiRNYO" Name="Table Name" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="341,410,65,19" Id="EGCz85kQ4eDPXwu0UwKx0e">
+            <p:NodeReference LastCategoryFullName="Xlsx" LastDependency="Xlsx.csproj">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TableRows" />
+            </p:NodeReference>
+            <Pin Id="QV9tDHECW3TQZWedX2tpYQ" Name="Input" Kind="InputPin" />
+            <Pin Id="N2PZ8ymescbQdslsTsujES" Name="Skip Rows" Kind="InputPin" DefaultValue="1" />
+            <Pin Id="BbaVgt9jgdpPeEtB1lCcs1" Name="Read" Kind="ApplyPin" />
+            <Pin Id="FVf5Y7wLk9oMtemZ3UsMQY" Name="Output" Kind="OutputPin" />
+            <Pin Id="AGvqDRWALlmNQTjH8OaAhd" Name="Output 2" Kind="OutputPin" />
+          </Node>
+          <Pad Id="L9jp13ohavnLrphC5TWmWn" Comment="" Bounds="336,490,35,80" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GYr69LK3aEaMEMk4Uz7txh" Comment="" Bounds="403,490,35,80" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RMA8rqMpNhlNjcuEbWJU6s" Bounds="426,408,126,41" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; &quot;Ctrl +&quot; to add outputs">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Mq4sL6OjTbxNh3nb2mm4zl" Comment="Table Index" Bounds="363,280,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="APXXpoPc6CTOqpzWeU2xO6" Comment="Table Name" Bounds="383,330,48,18" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="ChBmFBDsFRiNObaG9U3w1H" Comment="Skip Rows" Bounds="373,371,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="598,460,57,19" Id="Svzk3q8iC19QMoHcjhefpY">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Changed" />
+            </p:NodeReference>
+            <Pin Id="Ji8gS0iEm4dOJPKsfjtFZj" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AHtTl0Ks3MBPwUgH9WeyTx" Name="Changed On Create" Kind="InputPin" IsHidden="true" />
+            <Pin Id="F3padSdhWNJOcGSdDBiI3g" Name="Value" Kind="InputPin" />
+            <Pin Id="IgU28p1KbEDOYkSzPrUeHA" Name="Result" Kind="OutputPin" />
+            <Pin Id="I1X9fxAkVtIP2qBlYK0DEh" Name="Unchanged" Kind="OutputPin" />
+          </Node>
+          <Pad Id="T6iptBj9mX0OlDQ1hvdTN1" Comment="" Bounds="600,509,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DTJAPMpB9nWO0kifjcvwK1" Bounds="665,488,126,41" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; You don't need cache here">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Vh28oXvSplvO64NoCDC26I" Bounds="452,515,126,41" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Outputs are Spread&lt;string&gt;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NHIAL2dwNLbOTn3QY8QwPj" Bounds="469,352,150,46" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; How many rows you wish to skip">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Ab86fStbKGzLFnfRAwMTcm" Bounds="483,265,150,46" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Sheet index in the xls file">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="PHehgoQf6w3LohuegEXpzm" Name="Create" />
+        <Patch Id="Sf6OUkWno99Ng1ANrAC4Sw" Name="Update" />
+        <ProcessDefinition Id="EczoEUdnQH5NT21u2nuGnV">
+          <Fragment Id="N9yr8uMIJYVPX4zZPXszcb" Patch="PHehgoQf6w3LohuegEXpzm" Enabled="true" />
+          <Fragment Id="DDyayGk2TLCO2riXvUOlTW" Patch="Sf6OUkWno99Ng1ANrAC4Sw" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="FoBEn2MqrE4LA1U0IPifCh" Ids="UWXFlCNYPe5McHFm5fJcun,AVnL2BRyc7tNho0dSCFlv6" />
+        <Link Id="CkYuJ5LlGCKOLLyzAudmRi" Ids="DTH1EolFlZEPcryW9MZOjz,TBmqx9nWyZYOJGXEHCgx7w" />
+        <Link Id="QQKh8bjmBNCLJzgeZDS9E8" Ids="J8B7kBrVtAnMD8SVYTx2JZ,QV9tDHECW3TQZWedX2tpYQ" />
+        <Link Id="LnF055SnYxAOzZkREHkFgc" Ids="FVf5Y7wLk9oMtemZ3UsMQY,L9jp13ohavnLrphC5TWmWn" />
+        <Link Id="TSELgRg9rAjMWoNO4IZ4BX" Ids="AGvqDRWALlmNQTjH8OaAhd,GYr69LK3aEaMEMk4Uz7txh" />
+        <Link Id="IgkLqpZJQxILYcj7HRmskm" Ids="Mq4sL6OjTbxNh3nb2mm4zl,IYoGts912W5N3h4BNWD7fy" />
+        <Link Id="TzosAiUUSfeMc0A6pGJBpH" Ids="MPyxUHGU0dQQc2tzNiRNYO,APXXpoPc6CTOqpzWeU2xO6" />
+        <Link Id="F5Ryhkhyqq6MqNePisAlfa" Ids="ChBmFBDsFRiNObaG9U3w1H,N2PZ8ymescbQdslsTsujES" />
+        <Link Id="UkYt4yXdsHhMxkcFzHP2Kw" Ids="IgU28p1KbEDOYkSzPrUeHA,T6iptBj9mX0OlDQ1hvdTN1" />
+        <Link Id="V5dzAar3YbnNW3i18eCf1D" Ids="AGvqDRWALlmNQTjH8OaAhd,F3padSdhWNJOcGSdDBiI3g" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="GaeDSY7vBx0PIA40mzQn7a" Location="VL.Xlsx" Version="0.0.0" />
+</Document>

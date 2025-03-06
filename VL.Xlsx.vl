@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="AnmT1JwZMA6PeKa3tP9SC9" LanguageVersion="2025.7.0-0200-g4a7221ecd9" Version="0.128">
+  <NugetDependency Id="AUt0WRdwucYPd0Armr1OqC" Location="VL.CoreLib" Version="2025.7.0-0200-g4a7221ecd9" />
+  <Patch Id="LHTzWjNCdB5PAjzgihSlzR">
+    <Canvas Id="KgNr6izWwmUOtVE500yRXk" DefaultCategory="Xlsx" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Ez3grOyaLslLSu0OlI5bNY">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="REV3UJ5iznqL7DSJw3kvJZ">
+        <Canvas Id="JTDtgaUUqb1NLCGbsf41Bi" CanvasType="Group" />
+        <Patch Id="MzcqGa8QtpnOhTUYPOqrIk" Name="Create" />
+        <Patch Id="Cj3oPFkIJIVPOh1cF1rEmq" Name="Update" />
+        <ProcessDefinition Id="QmtNWHjpiwUPPwt1RbNk0F">
+          <Fragment Id="VLVXrYU7E8KPjz2OQ7ceUB" Patch="MzcqGa8QtpnOhTUYPOqrIk" Enabled="true" />
+          <Fragment Id="EqW0Aq63flyNY677W1Sas0" Patch="Cj3oPFkIJIVPOh1cF1rEmq" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <PlatformDependency Id="DKf6UIpQhoFOnKrMst5Wn5" Location="./lib/Debug/net8.0/Xlsx.dll" IsForward="true" />
+  <NugetDependency Id="F4n7oaHLKXzOLGdR9TVYma" Location="ExcelDataReader" Version="3.7.0" />
+  <NugetDependency Id="QZnmXBhzwKKLHXn15Pk4iy" Location="ExcelDataReader.DataSet" Version="3.7.0" />
+</Document>
