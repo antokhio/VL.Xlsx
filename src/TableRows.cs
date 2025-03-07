@@ -4,7 +4,7 @@ using VL.Lib.Collections;
 
 namespace Xlsx;
 
-[ProcessNode()]
+[ProcessNode(HasStateOutput = true)]
 public class TableRows
 {
     private DataTable? _input;
