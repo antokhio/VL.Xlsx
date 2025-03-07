@@ -1,4 +1,4 @@
-# VL.Xlsc
+# VL.Xlsx
 
 Modern Excel Parser for [vvvv](https://vvvv.org)
 
@@ -8,7 +8,7 @@ Modern Excel Parser for [vvvv](https://vvvv.org)
 nuget install VL.Xlsx
 ```
 
-Will install nuget packages.
+Installs following nuget packages:
 * VL.Xlsx
 * ExcelDataReader
 * ExcelDataReader.DataSet
