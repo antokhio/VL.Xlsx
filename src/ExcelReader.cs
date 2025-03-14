@@ -38,21 +38,13 @@ public class ExcelReader
 
         try
         {
-            using (var stream = File.OpenRead(_input))
-            {
-                using (var reader = ExcelReaderFactory.CreateReader(stream))
-                {
-                    Output = reader.AsDataSet();
-                    return;
-                }
-            }
+            Output = Utils.ReadExcelFile(_input);
         }
         catch (Exception ex)
         {
             Console.WriteLine(ex.Message);
+
+            Output = null;
         }
-
-        Output = null;
     }
-
 }

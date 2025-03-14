@@ -56,28 +56,5 @@ public class TableRowParser<T>
 
     public Spread<T> Output { get; private set; }
 
-    public void Read()
-    {
-        var rows = _input?.Rows;
-
-        var isValid = rows != null && _parser != null;
-
-        if (!isValid)
-        {
-            Output = Spread<T>.Empty;
-            return;
-        }
-
-        var builder = new SpreadBuilder<T>();
-
-        for (int i = _skipRows; i < rows?.Count; i++)
-        {
-            T row = _parser!.Invoke(rows[i]?.ItemArray.ToSpread() ?? Spread<object?>.Empty);
-
-            builder.Add(row);
-        }
-
-        Output = builder.ToSpread();
-    }
-
+    public void Read() => Output = Utils.ReadTableRows<T>(_input, _parser, _skipRows);
 }

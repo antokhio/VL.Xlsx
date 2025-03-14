@@ -5,7 +5,7 @@ using Path = VL.Lib.IO.Path;
 
 namespace Xlsx;
 
-public static class Experimental
+public static class Utils
 {
     public static DataSet ReadExcelFile(Path? input)
     {

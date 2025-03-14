@@ -40,10 +40,9 @@ public class Table
     {
         if (_input != null)
         {
-            Output = _input.Tables[_tableIndex % _input.Tables.Count];
-            TableName = Output.TableName;
-
-            return;
+            string tableName;
+            Output = Utils.ReadTable(_input, _tableIndex, out tableName);
+            TableName = tableName;
         }
     }
 
